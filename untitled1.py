@@ -25,7 +25,7 @@ degree_salary = databyyear.loc[year,["Post-secondary : Degree"]]
 subdegree_salary = databyyear.loc[year,["Post-secondary : Sub-degree"]]
 diploma_salary = databyyear.loc[year,["Post-secondary : Diploma / Certificate"]]
 secondary_salary = pd.DataFrame(databyyear.loc[year,["Upper secondary", "Lower secondary"]].mean(axis=1))
-secondary_salary.columns=["aaaa"]
+secondary_salary.columns=["Secondary"]
 primary_salary = databyyear.loc[year,["Primary and below"]]
 
 databyyear.plot()
